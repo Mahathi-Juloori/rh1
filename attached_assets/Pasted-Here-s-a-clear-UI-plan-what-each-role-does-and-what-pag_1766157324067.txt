@@ -1,0 +1,215 @@
+Here’s a clear UI plan: what each role does and what pages your project should have.
+
+👥 Two Roles in Your System
+🧑‍🦽 User = Patient
+
+Uses the system to:
+
+Do air-drawing exercises
+
+See their own progress
+
+Stay motivated
+
+🧑‍⚕️ Doctor = Therapist
+
+Uses the system to:
+
+Monitor multiple patients
+
+Analyze reports & trends
+
+Adjust therapy plan
+
+🗂️ Overall Pages / Screens in Your Project
+1️⃣ Landing / Home Page
+
+Purpose: Entry point
+
+Contains:
+
+Project name & intro
+
+Buttons:
+👉 Login as Patient
+👉 Login as Therapist
+👉 Register
+
+2️⃣ Login / Register Page
+
+Purpose: Authentication
+
+Fields:
+
+Email / Username
+
+Password
+
+Role selection (Patient / Therapist)
+
+Extra:
+
+Simple validation
+
+“New user? Register”
+
+🧑‍🦽 Patient (User) UI Flow
+3️⃣ Patient Dashboard
+
+Purpose: Main hub after login
+
+Shows:
+
+Welcome message
+
+Last session summary
+
+Quick stats:
+
+Latest stability score
+
+Smoothness score
+
+Completion time
+
+Buttons:
+▶ Start Exercise
+📊 View Progress
+👤 Profile
+🚪 Logout
+
+4️⃣ Exercise / Air Canvas Page
+
+Purpose: Do rehab exercise
+
+Contains:
+
+Webcam feed
+
+Live hand tracking overlay
+
+Shape to draw (circle/line/square)
+
+Timer
+
+Start / Stop buttons
+
+On completion:
+
+Show session scores
+
+👉 This is your core demo page.
+
+5️⃣ Session Result Page
+
+Purpose: Immediate feedback
+
+Shows:
+
+Stability score
+
+Smoothness score
+
+Time taken
+
+Simple message:
+“Good job! You improved 👍”
+
+Button:
+➡ Save & remind to practice again
+
+6️⃣ Progress / History Page
+
+Purpose: Track improvement
+
+Shows:
+
+Graphs:
+
+Day vs Stability
+
+Day vs Smoothness
+
+Table of sessions:
+Date | Shape | Scores | Time
+
+Download report (optional)
+
+7️⃣ Patient Profile Page
+
+Purpose: Manage details
+
+Contains:
+
+Name, age, condition (optional)
+
+Assigned therapist
+
+Change password
+
+Logout
+
+🧑‍⚕️ Therapist (Doctor) UI Flow
+8️⃣ Therapist Dashboard
+
+Purpose: Overview of all patients
+
+Shows:
+
+List of patients
+
+Search / filter
+
+Alerts:
+⚠ Patient not improving
+⚠ Missed sessions
+
+Each patient → “View Details”
+
+9️⃣ Patient Detail Page (Doctor View)
+
+Purpose: Deep analysis of one patient
+
+Shows:
+
+Patient info
+
+Progress graphs
+
+Session history
+
+Trends:
+↑ improving / ↓ declining
+
+Notes section:
+“Increase practice to 2x daily”
+
+Buttons:
+
+Add note
+
+Export report (PDF/CSV)
+
+🔟 Reports / Analytics Page
+
+Purpose: Overall stats
+
+Shows:
+
+Avg improvement across patients
+
+Charts
+
+Helps therapist in review
+
+(Optional but impressive)
+
+1️⃣1️⃣ Therapist Profile Page
+
+Purpose: Account management
+
+Personal info
+
+Change password
+
+Logout

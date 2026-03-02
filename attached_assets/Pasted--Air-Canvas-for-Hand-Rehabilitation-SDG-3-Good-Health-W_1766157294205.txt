@@ -1,0 +1,228 @@
+# Air Canvas for Hand Rehabilitation
+
+## (SDG 3: Good Health & Well‑Being)
+
+---
+
+## 1. Project Overview
+
+**Air Canvas for Hand Rehabilitation** is a low‑cost, touchless rehabilitation support system that tracks and analyzes hand movement using a simple webcam and computer vision techniques. The system allows users to draw shapes in the air using finger movements while objectively measuring improvement over time.
+
+This project is designed as a **supportive rehabilitation aid**, not a medical diagnostic or treatment tool.
+
+---
+
+## 2. Problem Statement
+
+In many rehabilitation centers, especially in rural and low‑resource areas:
+
+* Patient progress is observed manually by therapists
+* Feedback is often subjective ("slight improvement", "better control")
+* There is no numerical or visual tracking of recovery
+* Therapists are overworked and cannot monitor detailed movement every session
+* Daily travel to rehab centers is difficult for many patients
+
+This creates a gap between **actual recovery progress** and **what can be measured or documented**.
+
+---
+
+## 3. Proposed Solution
+
+The proposed system solves this gap by:
+
+* Tracking hand and finger movement using a webcam
+* Allowing patients to perform simple air‑drawing exercises
+* Automatically recording motion data
+* Calculating objective metrics such as stability, smoothness, and completion time
+* Showing progress visually through graphs and reports
+
+This makes rehabilitation **measurable, engaging, and accessible**.
+
+---
+
+## 4. Core Features (Must‑Have)
+
+These features are sufficient for a complete and strong mini‑project.
+
+### 4.1 Hand Tracking
+
+* Uses **MediaPipe Hands** for real‑time hand landmark detection
+* Tracks fingertip position accurately
+* Works with a single standard webcam
+
+### 4.2 Air Drawing
+
+* User draws shapes (circle, line, square) in the air
+* Fingertip path is plotted on screen
+* Feels interactive and game‑like
+
+### 4.3 Path Tracking
+
+* Stores x, y coordinates of fingertip movement
+* Maintains motion history for each session
+
+### 4.4 Performance Metrics
+
+* **Stability** – measures hand shakiness
+* **Smoothness** – measures consistency of motion
+* **Completion Time** – time taken to complete a task
+
+### 4.5 Progress Reporting
+
+* Session‑wise comparison (Day 1 vs Day 7)
+* Visual graphs showing improvement
+* Numerical scores instead of subjective comments
+
+---
+
+## 5. Optional Features (Add 1–2 if Time Allows)
+
+These features are not mandatory but can impress evaluators.
+
+* Gesture accuracy score (compare drawn shape with ideal template)
+* Therapist mode (login and view patient reports)
+* CSV or PDF export of reports
+* Dashboard with charts and trends
+
+---
+
+## 6. Technical Difficulty Analysis
+
+| Module            | Difficulty | Reason                         |
+| ----------------- | ---------- | ------------------------------ |
+| Hand Tracking     | Easy       | MediaPipe provides landmarks   |
+| Air Drawing       | Easy       | Plot fingertip coordinates     |
+| Stability Metric  | Medium     | Standard deviation calculation |
+| Smoothness Metric | Medium     | Velocity variance              |
+| Accuracy Scoring  | Medium     | Path comparison                |
+| Dashboard         | Medium     | Basic charts                   |
+
+No part of the project requires heavy deep learning or medical AI.
+
+---
+
+## 7. Example Metric Logic
+
+### 7.1 Hand Stability
+
+* Less shaking = better stability
+* Calculated using variation in fingertip position
+
+### 7.2 Motion Smoothness
+
+* Smooth motion = consistent speed
+* Sudden jerks reduce smoothness score
+
+### 7.3 Accuracy
+
+* Compares user‑drawn path with ideal shape
+* Higher overlap = higher accuracy
+
+All metrics use **basic mathematics**, not complex AI models.
+
+---
+
+## 8. Real‑World Use and Impact
+
+### 8.1 Objective Progress Tracking
+
+Instead of vague feedback:
+
+* Stability score: 62 → 78
+* Smoothness score: 55 → 70
+* Completion time reduced
+
+Numbers and graphs provide clarity and confidence.
+
+### 8.2 Improved Patient Engagement
+
+* Rehab exercises often feel boring
+* Air drawing feels like a game
+* Increased motivation leads to better practice consistency
+
+### 8.3 Support for Therapists
+
+* Automatic session recording
+* Reports can be reviewed later
+* Saves therapist time and effort
+
+### 8.4 Remote & Home‑Based Rehabilitation
+
+* Patients can practice from home
+* Data can be reviewed remotely
+* Highly useful for rural and mobility‑restricted patients
+
+---
+
+## 9. Real‑World Scenarios
+
+### Scenario 1: Stroke Recovery
+
+* Patient practices air drawing daily
+* System shows steady improvement
+* Therapist adjusts therapy plan based on data
+
+### Scenario 2: Elderly Patients
+
+* Reduced travel requirement
+* Touchless and safe interaction
+* Encourages regular hand movement
+
+### Scenario 3: Low‑Resource Clinics
+
+* No expensive rehabilitation machines
+* Only a webcam and laptop required
+* Affordable and scalable solution
+
+---
+
+## 10. SDG 3 Alignment (Good Health & Well‑Being)
+
+This project contributes to SDG 3 by:
+
+* Improving access to rehabilitation tools
+* Supporting non‑invasive recovery methods
+* Enabling consistent therapy monitoring
+* Reducing long‑term disability risks
+
+The project **supports recovery**, not diagnosis or treatment.
+
+---
+
+## 11. Ethical & Safety Disclaimer
+
+> **“This system is a supportive rehabilitation aid and not a medical diagnostic or treatment tool.”**
+
+This statement must be included in:
+
+* Project report
+* Demo
+* Presentation
+
+---
+
+## 12. Viva / Interview One‑Line Explanation
+
+> “This project provides a low‑cost, computer‑vision‑based rehabilitation support system that objectively tracks hand movement recovery and enables engaging, accessible therapy.”
+
+---
+
+## 13. Final Verdict
+
+* Easy enough to build within a mini‑project timeline
+* Advanced enough to demonstrate computer vision skills
+* Strong real‑world and SDG relevance
+* Demo‑friendly and impactful
+
+---
+
+## 14. Future Scope
+
+* Mobile app integration
+* Multi‑hand or arm tracking
+* Gamified rehabilitation levels
+* Cloud‑based therapist dashboards
+
+---
+
+**End of Document**
